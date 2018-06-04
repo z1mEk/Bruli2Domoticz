@@ -19,7 +19,7 @@ def Form_Load(HiByte, LoByte):
     return (HiByte and 0x7F) * 0x100 or LoByte or - (HiByte > 0x7F) * 0x8000
 
 r = requests.get('https://gabrielzima.pl/b.php', auth=('user', 'password')) # mock - replace to Bruli url e.g. http://piec?com=02010006000000006103
-logging.debug('Bruli response code:' + str(r.status_code) + ', Content: ' + r.text)
+logging.debug('Bruli response code: ' + str(r.status_code) + ', Content: ' + r.text)
 
 if r.status_code == 200:
     valarray = r.text[1:-1].split(',')
@@ -27,22 +27,22 @@ if r.status_code == 200:
     sal = tempval(valarray[16], valarray[17])
     run = setvaltempdomo(412, sal)
 
-    hol = tempval(valarray[18],valarray[19])
+    hol = tempval(valarray[18], valarray[19])
     run = setvaltempdomo(200, hol)
 
-    out = tempval(valarray[20],valarray[21])
+    out = tempval(valarray[20], valarray[21])
     run = setvaltempdomo(196, out)
 
-    cwu = tempval(valarray[22],valarray[23])
+    cwu = tempval(valarray[22], valarray[23])
     run = setvaltempdomo(198, cwu)
 
-    ret = tempval(valarray[24],valarray[25])
+    ret = tempval(valarray[24], valarray[25])
     run = setvaltempdomo(203, ret)
 
-    co  = tempval(valarray[28],valarray[29])
+    co  = tempval(valarray[28], valarray[29])
     run = setvaltempdomo(197, co)
 
-    kom = tempval(valarray[30],valarray[31])
+    kom = tempval(valarray[30], valarray[31])
     run = setvaltempdomo(202, kom)
 
     fuel = valarray[75]
