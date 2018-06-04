@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+#
+# Bruli2Domoticz
+# author: z1mEk
+# date: 2018-06-04
+# case url: https://www.facebook.com/groups/domoticzpl/permalink/2136742746558544/
+#
 
 import requests
 import logging
