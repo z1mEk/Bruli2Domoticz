@@ -2,6 +2,7 @@
 #
 # Bruli2Domoticz
 # author: z1mEk
+# varsion: 0.9.0
 # date: 2018-06-04
 # case url: https://www.facebook.com/groups/domoticzpl/permalink/2136742746558544/
 #
