@@ -14,7 +14,7 @@ logging.basicConfig(filename='/home/pi/bruli.log', level=logging.DEBUG) # For si
 logging.debug('Started')
 
 def setvaltempdomo(idx, sValue):
-#    r = requests.get('http://192.168.1.208:8080/json.htm?type=command&param=udevice&idx=' + str(idx) + '&nvalue=0&svalue=' + str(sValue), auth=('admin', 'password'))
+    r = requests.get('http://192.168.1.208:8080/json.htm?type=command&param=udevice&idx=' + str(idx) + '&nvalue=0&svalue=' + str(sValue), auth=('admin', 'password'))
     logging.debug('Domoticz response code: ' + str(r.status_code) + ', Content: ' + r.text)
 
 def tempval(arg1, arg2):
