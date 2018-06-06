@@ -2,8 +2,8 @@
 #
 # Bruli2Domoticz
 # author: z1mEk
-# version: 0.9.0
-# date: 2018-06-04
+# version: 0.9.1
+# date: 2018-06-06
 # case url: https://www.facebook.com/groups/domoticzpl/permalink/2136742746558544/
 #
 
@@ -54,8 +54,8 @@ if r.status_code == 200:
     kom = tempval(valarray[30], valarray[31])
     run = setvaltempdomo(233, kom)
 
-    #fuel = valarray[75]
-    #run = setvaltempdomo(234, fuel)
+    fuel = valarray[75]
+    run = setvaltempdomo(234, fuel)
 else:
     logging.warning('Bruli response code is ' + str(r.status_code) + ', Content: ' + r.text )
 
