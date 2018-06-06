@@ -10,7 +10,7 @@
 import requests
 import logging
 
-logging.basicConfig(filename='/home/gabriel/bruli.log', level=logging.DEBUG) # For silent set logging.CRTITICAL, please set path to log file.
+logging.basicConfig(filename='/home/pi/bruli.log', level=logging.DEBUG) # For silent set logging.CRTITICAL, please set path to log file.
 logging.debug('Started')
 
 def setvaltempdomo(idx, sValue):
